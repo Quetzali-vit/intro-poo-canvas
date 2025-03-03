@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Intro Cancas 2D</title>
+    <style>
+        /* Estilo general de la página */
+        body {
+            background: linear-gradient(to right, #c7ffcb, #d4c7ff); /* Degradado de azul */
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.208);
+            padding: 1rem;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 50px;
+        }
+
+        .canvas-container {
+            display: flex;
+        }
+
+        .canvas-wrapper {
+            flex: 100;
+        }
+
+        /* Agregar media query para ajustar el diseño en pantallas pequeñas */
+        @media (max-width: 768px) {
+            .canvas-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="d-flex justify-content-center flex-column mb-4">
+            <h1>Objetos 2D mediante OOP</h1>
+        </div>
+        <div class="canvas-container">
+            <div class="canvas-wrapper">
+                <h5>Objeto 2D</h5>
+                <canvas class="border shadow" id="canvasOOP"></canvas>
+            </div>
+            <div class="canvas-wrapper">
+                <h5>Objeto con Random</h5>
+                <canvas class="border shadow" id="canvasRandom"></canvas>
+            </div>
+            <div class="canvas-wrapper">
+                <h5>Múltiples objetos</h5>
+                <canvas class="border shadow" id="canvasMultiple"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
